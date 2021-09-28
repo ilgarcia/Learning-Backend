@@ -1,5 +1,8 @@
-# Learning-Backend
-Aprendendo Backend autodidata 
+<p align="center">
+  <img src="img/titulo.PNG" alt="Título">
+</p>
 
-testando alteração de branch
 
+<p align="center">
+  <img src="img/planejamento.jpg" alt="Roadmap">
+</p>
