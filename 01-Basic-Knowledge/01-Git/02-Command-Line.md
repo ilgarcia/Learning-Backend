@@ -80,10 +80,6 @@ git add <file> | * | -A | --all
 
 create a file named `.gitignore` 
 
-```
-Search the rules for the patterns you can put in the file .gitignore
-
-File examples for dozens of projects and languages:
-https://github.com/github/gitignore
-```
-
+<p>
+  <a href="https://github.com/github/gitignore">File examples for dozens of projects and languages</a>
+</p>
