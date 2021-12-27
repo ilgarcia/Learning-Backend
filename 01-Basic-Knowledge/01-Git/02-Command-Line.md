@@ -4,7 +4,7 @@ there is a lot of ways to use Git, there are the original command-line tools, an
 
 ## Git Setup
 
-> git config
+`git config`
 
 Variables can be stored in three different places:
 
@@ -22,35 +22,39 @@ Variables can be stored in three different places:
 
 To view all of your settings and where they are coming from use:
 
-> git config --list --show-origin
+`git config --list --show-origin`
 
 **Change config**
 
-> git config <--system|--global|--local> <new config>
+`git config <--system|--global|--local> <new config>`
 
 **Getting Help**
 
-> git help <verb>
->
-> git <verb> --help or -h
+`git help <verb>`
+
+`git <verb> --help or -h`
 
 ## GIT Basics
 
 **Getting a git repository**
 
 1. Take a local directory and turn it into a git repository
-> git init
+
+`git init`
 
 2. Clone an existing Git repository from elsewhere
-> git clone <url> (<directory name>)
+
+`git clone <url> (<directory name>)`
 
 **Checking the status of your files**
-> git status
->
-> git status -s
+
+`git status`
+
+`git status -s`
 
 **Tracking/Staging files** 
-> git add <file> | * | -A | --all
+
+`git add <file> | * | -A | --all`
 
 **Ignoring files**
 
