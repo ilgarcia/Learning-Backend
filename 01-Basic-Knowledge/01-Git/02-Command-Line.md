@@ -1,15 +1,11 @@
 # The Command Line
-
 there is a lot of ways to use Git, there are the original command-line tools, and there ara many graphical user interfaces (GUIs) of varying capabilities.
 
 ## Git Setup
-
 ```
 git config
 ```
-
-Variables can be stored in three different places:
-
+### Variables can be stored in three different places:
 > **--system**
 > 
 > /etc/gitconfig
@@ -22,71 +18,65 @@ Variables can be stored in three different places:
 > 
 > .git/config
 
-To view all of your settings and where they are coming from use:
-
+**To view all of your settings and where they are coming from use:**
 ```
 git config --list --show-origin
 ```
 
 **Change config**
-
 ```
 git config <--system|--global|--local> <new config>
 ```
 
 **Getting Help**
-
 ```
 git help <verb>
 ```
+```
+git <verb> <Options>
+```
+Options:
 
-```
-git <verb> --help or -h
-```
+`--help`  > Getting help
+
+`-h`  > Getting help
 
 ## GIT Basics
 
-**Getting a git repository**
+### Getting a git repository
 
-1. Take a local directory and turn it into a git repository
-
+1. **Take a local directory and turn it into a git repository**
 ```
 git init
 ```
-
-2. Clone an existing Git repository from elsewhere
-
+2. **Clone an existing Git repository from elsewhere**
 ```
 git clone <url> (<directory name>)
 ```
 
 **Checking the status of your files**
-
 ```
-git status
+git status <Options>
 ```
-
 Options:
 
--s  > Status simplificado 
-
+`-s`  > Simplified status
 
 **Tracking/Staging files** 
-
 ```
-git add <file> 
+git add <Options> 
 ```
-
 Options:
 
-`*` > add all files to staged area
+`<file>`  > Add file to staged area
 
--A > add all files to staged area
+`*` > Add all files to staged area
 
---all > add all files to staged area
+`-A` > Add all files to staged area
+
+`--all` > Add all files to staged area
 
 **Ignoring files**
-
 create a file named `.gitignore` 
 
 <p>
@@ -94,13 +84,11 @@ create a file named `.gitignore`
 </p>
 
 **Unstaged/Staged changes**
-
 ```
 git diff
 ```
 
 **Staged/Committed changes**
-
 ```
 git diff --staged | --cached
 ```
@@ -121,11 +109,11 @@ git commit
 
 Options:
 
--v  > Also puts the diff of your change in the editor
+`-v`  > Also puts the diff of your change in the editor
 
--m "text"  > Commit message inline
+`-m "text"`  > Commit message inline
 
--a  > Skip the staging area
+`-a`  > Skip the staging area
 
 **Removing files from tracked files**
 
@@ -155,11 +143,11 @@ git log
 
 Options:
 
---patch | -p  > shows the diference (the patch outputs)
+`--patch | -p`  > shows the diference (the patch outputs)
 
--2 > Show only the last two entries
+`-2` > Show only the last two entries
 
---stat  > abbreviated stats dor each commit
+`--stat`  > abbreviated stats dor each commit
 
 :rotating_light: search for another log options and log filters when necessary 
 
