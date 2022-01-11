@@ -53,7 +53,6 @@ git init
 ```
 git clone <url> (<directory name>)
 ```
-
 **Checking the status of your files**
 ```
 git status <Options>
@@ -94,7 +93,6 @@ git diff --staged | --cached
 ```
 
 **git diff in an External Tool**
-
 ```
 git difftool
 ```
