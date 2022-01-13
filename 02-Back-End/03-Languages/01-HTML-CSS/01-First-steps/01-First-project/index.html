@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Changing favicon -->
+    <link rel="shortcut icon" href="./img/html.ico" type="image/x-icon">
+
+    <title>First Exercise</title>
+</head>
+
+<body>
+    <!-- Title hierarchy -->
+    <div>
+        <h1>Title 1</h1>
+        <h2>Title 2</h2>
+        <h3>Title 3</h3>
+        <h4>Title 4</h4>
+        <h5>Title 5</h5>
+        <h6>Title 6</h6>
+        <p>Creating a paragraph using &lt;p&gt; <br> and breaking a line using &lt;br&gt;</p>
+    </div>
+
+    <hr>
+
+    <!-- links -->
+    <p>External link <a href="https://github.com/ilgarcia" target="blank" rel="external">My GitHub</a></p>
+    <p>Use target="blank" to open in another tab</p>
+
+    <p>You may use "external" for every link to a different website, no matter if it's yours or not, if it's on the same host or not.</p>
+
+    <p>You may use "nofollow" for every link that you don't endorse (for example: search engines shouldn't assume that it's a relevant link and should not give any ranking credit to this link).</p>
+
+    <p>You may use both values for the same link:</p>
+
+    <p>
+        <code>
+            &lt;a href="http://example.com/" rel="external nofollow"&gt;Foobar&lt;/a&gt;
+        </code>
+    </p>
+
+    <p>Internal link <a href="./link-example.html">Example page</a></p>
+
+    <p>You may use rel="next" or rel="prev" for every internal link</p>
+
+    <p>
+        <code>
+            &lt;a href="http://example.com/next" rel="next"&gt;Foobar&lt;/a&gt;
+            &lt;a href="http://example.com/" rel="prev"&gt;Foobar&lt;/a&gt;
+        </code>
+    </p>
+
+    <p>You may use target="_self" to reference the same tab</p>
+
+    <h2>Links for download</h2>
+        <ul>
+            <li><a href="./books/example-book.pdf" type="application/pdf">Download a PDF book</a></li>
+            <li><a href="./books/example-book.rar" download="example-book.rar" type="application/rar">Download a .rar book</a></li>
+        </ul>
+    <hr>
+
+    <!-- lists -->
+    <div>
+        <h2>Ordered lists</h2>
+        <ol>
+            <li>Item 1</li>
+            <ol type="a">
+                <li>Subitem 1</li>
+                <li>Subitem 2</li>
+                <li>Subitem 3</li>
+            </ol>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+        </ol>
+        <p> You can change the type="1 | A | a | I | i"</p>
+        
+        <h2>Unordered lists</h2>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+        </ul>
+        <p> You can change the type="circle | disc | square"</p>
+         
+        <h2>Definition lists</h2>
+        <dl>
+            <dt>Word 1</dt>
+            <dd>Description 1</dd>
+            <dt>Word 2</dt>
+            <dd>Description 2</dd>
+            <dt>Word 3</dt>
+            <dd>Description 3</dd>
+        </dl>
+    </div>
+
+    <hr>
+
+    <!-- Text Symbols -->
+    <div>
+        <h2>Text symbols</h2>
+        <p><strong>Special symbols</strong> &reg; &copy; &trade; &euro; &pound; &yen; &cent; &Delta; &uarr; &larr;</p>
+        <p>Emojis (<a href="https://emojipedia.org/">https://emojipedia.org/</a>) &#x1F596</p>
+    </div>
+
+    <hr>  
+    
+    <!-- Image sample -->
+    <div>
+        <h2>Image example</h2>
+        <img src="./img/example.png" alt="example">
+    </div>
+
+    <!-- Flex Picture -->
+
+    <h2>Flex image</h2>
+    <p><em>Bellow 700px the image size changes</em></p>
+    <picture>
+        <source media="(max-width: 700px)" srcset="img/example.png" type="image/png">
+        <img src="img/example-large.png" alt="flex-Picture">
+    </picture>
+
+    <hr>  
+
+    <!-- Text Semantics -->
+    <div>
+        <h2>the HTML5 is focused in semantic:</h2>
+        <p><address>Address example &lt;address&gt;</address></p>
+        <p><strong>Strong text &lt;strong&gt;</strong></p>
+        <p><em>Emphasis text &lt;em&gt;</em></p>
+        <p><mark>marking a text using the tag &lt;mark&gt;</mark> </p>
+        <p><small>small</small> &lt;small&gt;</p>
+        <p><del>excluded</del> &lt;del&gt;</p>
+        <p><ins>inserted</ins> &lt;ins&gt;</p>
+        <p>Text <sup>superscript</sup> &lt;sup&gt;</p>
+        <p>Text <sub>subscript</sub> &lt;ins&gt;</p>
+    </div>
+
+    <!-- Formatting -->
+    <div>
+        <p><code>Mono spaced format &lt;code&gt;, format to show codes</code></p>
+        <p> </p>
+        <p>
+            To show code indentation use &lt;pre&gt;
+            <pre>
+                <code>
+    num = int(input('Type a number: '))
+    if num % 2 == 0:
+        print(f'the number {num} is even')
+    else:
+        print(f'the number {num} is odd')
+                </code>
+            </pre>
+        </p>
+        <p><q>To do a quote use the &lt;q&gt;</q> </p>
+        <p>
+            <blockquote cite="myself">
+                To do a block quote use the &lt;blockquote cite="font"&gt;
+            </blockquote>
+        </p>
+        <p>To show abbreviation use the &lt;abbr&gt; example <abbr title="HyperText MArkup Language">HTML</abbr></p>
+    </div>
+
+</body>
+
+</html>
