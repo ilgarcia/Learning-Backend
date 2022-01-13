@@ -1,32 +1,7 @@
 # The Command Line
 there is a lot of ways to use Git, there are the original command-line tools, and there ara many graphical user interfaces (GUIs) of varying capabilities.
 
-## Git Setup
-```
-git config
-```
-### Variables can be stored in three different places:
-> **--system**
-> 
-> /etc/gitconfig
 
-> **--global**
-> 
-> ~/.gitconfig or ~/.config/git/config
-
-> **--local**
-> 
-> .git/config
-
-**To view all of your settings and where they are coming from use:**
-```
-git config --list --show-origin
-```
-
-**Change config**
-```
-git config <--system|--global|--local> <new config>
-```
 
 **Getting Help**
 ```
@@ -300,13 +275,57 @@ Options:
 `-v` > Show last commit of each branch
 `--merged` >   Show the branches you have merged
 `--no-merged` > Show the branches you haven't merged
-``
+
+**Remote tracking branch names**
 
 ```
-git branch --merged
+
 ```
+
 ```
-git branch --np-merged
+
+```
+
+```
+
+```
+
+```
+
+```
+
+```
+
+```
+
+```
+
+```
+
+```
+
+```
+
+```
+
+```
+
+```
+
+```
+
+```
+
+```
+
+```
+
+```
+
+```
+
+```
+
 ```
 
 ```
