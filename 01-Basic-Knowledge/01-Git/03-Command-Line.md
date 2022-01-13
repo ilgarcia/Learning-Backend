@@ -279,7 +279,7 @@ Options:
 **Remote tracking branch names**
 
 ```
-
+git ls-remote <remote>
 ```
 
 ```
