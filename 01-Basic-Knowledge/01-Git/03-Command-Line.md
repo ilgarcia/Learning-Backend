@@ -157,7 +157,7 @@ git remote add <shortname> <url>
 ```
 **Fetch to download the data to your local repository**
 ```
-git fetch <shortname>
+git fetch <remote>
 ```
 **Fetch data and merge data from the origin repository** 
 ```
@@ -271,9 +271,13 @@ After a merge to see the conflict use `git status`, you can resolve manually cha
 git branch <Options>
 ```
 Options:
+
 ` ` > Show all branches
+
 `-v` > Show last commit of each branch
+
 `--merged` >   Show the branches you have merged
+
 `--no-merged` > Show the branches you haven't merged
 
 **Remote tracking branch names**
