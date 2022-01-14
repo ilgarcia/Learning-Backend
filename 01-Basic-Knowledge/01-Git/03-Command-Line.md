@@ -200,7 +200,7 @@ git tag -l <Pattern>
 ```
 git tag <version>
 ```
-- Annotaded - stored as full objects in the git database
+- Annotated - stored as full objects in the git database
 ```
 git tag -a <version> -m "<tagging-message>"
 ```
@@ -261,7 +261,9 @@ git checkout -b <newBranch>
 git merge <branch>
 ```
 :rotating_light: after merging you can delete the branch you worked before
-
+```
+git branch -d <branch>
+```
 **Merge conflicts**
 
 After a merge to see the conflict use `git status`, you can resolve manually changing the files and using `git add` or you can resolve graphically using `git mergetool`
