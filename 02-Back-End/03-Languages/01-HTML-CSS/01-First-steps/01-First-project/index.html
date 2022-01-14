@@ -57,8 +57,8 @@
 
     <h2>Links for download</h2>
         <ul>
-            <li><a href="./books/example-book.pdf" type="application/pdf">Download a PDF book</a></li>
-            <li><a href="./books/example-book.rar" download="example-book.rar" type="application/rar">Download a .rar book</a></li>
+            <li><a href="./media/example-book.pdf" type="application/pdf">Download a PDF book</a></li>
+            <li><a href="./media/example-book.rar" download="example-book.rar" type="application/rar">Download a .rar book</a></li>
         </ul>
     <hr>
 
@@ -163,6 +163,42 @@
             </blockquote>
         </p>
         <p>To show abbreviation use the &lt;abbr&gt; example <abbr title="HyperText MArkup Language">HTML</abbr></p>
+    </div>
+
+    <hr>
+
+    <!-- Audio -->
+
+    <div>
+        <h2>Playing Audio</h2>
+        <p><strong>&lt;audio&gt;</strong></p>
+        <audio src="./media/Ditch-Diggin-Jingle-Punks.mp3" controls></audio>
+        <p>Another way using <strong>&lt;source&gt;</strong></p>
+        <audio preload="metadata" controls>
+            <source src="./media/Ditch-Diggin-Jingle-Punks.mp3" type="audio/mpeg">
+            <source src="./media/Ditch-Diggin-Jingle-Punks.ogg" type="audio/ogg">
+            <source src="./media/Ditch-Diggin-Jingle-Punks.wav" type="audio/wav">
+            Unfortunately your browser is not able to play this audio <a href="./media/Ditch-Diggin-Jingle-Punks.mp3">Download audio</a>
+        </audio>
+    </div>
+
+    <!-- Video .mp4 | .m4v | webm | ogv -->
+
+    <div>
+        <h2>Local video</h2>
+        <p>is more usual to use &lt;video&gt; &lt;source&gt; </p>
+        <video width="300px" controls> 
+            <source src="./media/bunny.mp4" type="video/mp4">
+            <source src="./media/bunny.m4v" type="video/mp4">
+            <source src="./media/bunny.webm" type="video/webm">
+            <source src="./media/bunny.ogv" type="video/ogv">
+            Unfortunately your browser is not able to play this video
+        </video>
+     
+
+        <h2>Embed Video</h2>
+        <p>you can copy any video from any media source (like youtube) you just need to incorporate the video as an embed iframe </p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/2iaPuUFIyMo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 
 </body>
