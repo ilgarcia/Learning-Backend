@@ -256,6 +256,9 @@ git checkout <branch>
 ```
 git checkout -b <newBranch>
 ```
+:rotating_light: after a fetch you can create a new branch and merge this fetch
+
+
 **Merging branches**
 ```
 git merge <branch>
@@ -264,6 +267,11 @@ git merge <branch>
 ```
 git branch -d <branch>
 ```
+
+**delete branch remotely**
+
+git push origin --delete remoteBranchName
+
 **Merge conflicts**
 
 After a merge to see the conflict use `git status`, you can resolve manually changing the files and using `git add` or you can resolve graphically using `git mergetool`
