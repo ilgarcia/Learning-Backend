@@ -1,0 +1,16 @@
+.square{
+    width: 100px;
+    height: 100px;
+}
+
+/* Gradient */
+
+.gradient{
+    background-image: linear-gradient(to top, white, blue);
+}
+
+/* Fonts */
+
+.font{
+    font-family: Arial, Helvetica, sans-serif;
+}

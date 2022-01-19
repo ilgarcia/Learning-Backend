@@ -5,7 +5,6 @@
 https://git-scm.com/
 
 ## Show all config options
-
 ```
 git config
 ```
