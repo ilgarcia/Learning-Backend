@@ -51,7 +51,14 @@ Options:
 git ls-remote <remote>
 ```
 
-### Remotes
+## Git Rebase
+*Istead of merging you can use `git rebase`, in favour of the desire to achieve a linear history.*
+
+```
+git rebase
+```
+
+## Remotes
 
 **Showing your remotes**
 ```
@@ -85,3 +92,4 @@ git remote remove <remote>
 ```
 git remote rm <remote>
 ```
+
